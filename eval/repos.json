@@ -1,0 +1,62 @@
+[
+  {
+    "name": "open-interpreter",
+    "repo": "https://github.com/OpenInterpreter/open-interpreter.git",
+    "category": "shell-agent",
+    "notes": "Executes LLM-generated shell/python code locally. Prime LLM010 + LLM020 target."
+  },
+  {
+    "name": "aider",
+    "repo": "https://github.com/Aider-AI/aider.git",
+    "category": "code-agent",
+    "notes": "AI pair-programming. Edits files based on LLM output."
+  },
+  {
+    "name": "gpt-engineer",
+    "repo": "https://github.com/AntonOsika/gpt-engineer.git",
+    "category": "code-gen",
+    "notes": "Generates full projects from prompts; writes files from LLM output."
+  },
+  {
+    "name": "crewAI",
+    "repo": "https://github.com/crewAIInc/crewAI.git",
+    "category": "agent-framework",
+    "notes": "Multi-agent orchestration; many tool-calling loops."
+  },
+  {
+    "name": "autogen",
+    "repo": "https://github.com/microsoft/autogen.git",
+    "category": "agent-framework",
+    "notes": "Microsoft multi-agent. Code-execution agent uses LLM output as code."
+  },
+  {
+    "name": "embedchain",
+    "repo": "https://github.com/mem0ai/mem0.git",
+    "category": "rag",
+    "notes": "RAG / memory framework. Documents flow into LLM prompts."
+  },
+  {
+    "name": "vanna",
+    "repo": "https://github.com/vanna-ai/vanna.git",
+    "category": "text-to-sql",
+    "notes": "Open-source text-to-SQL. Directly mirrors the paper's Figure 1 motivating example."
+  },
+  {
+    "name": "openai-cookbook",
+    "repo": "https://github.com/openai/openai-cookbook.git",
+    "category": "examples",
+    "notes": "Official OpenAI examples. Mix of safe/unsafe demonstrative patterns."
+  },
+  {
+    "name": "anthropic-cookbook",
+    "repo": "https://github.com/anthropics/anthropic-cookbook.git",
+    "category": "examples",
+    "notes": "Official Anthropic examples. Uses messages API."
+  },
+  {
+    "name": "langchain-templates",
+    "repo": "https://github.com/langchain-ai/langchain.git",
+    "category": "framework-examples",
+    "notes": "LangChain monorepo; we will scope analysis to libs/langchain/langchain/agents and templates."
+  }
+]
