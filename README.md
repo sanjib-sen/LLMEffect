@@ -86,7 +86,7 @@ The analyzer recognizes native SDK calls and common framework wrappers:
 | `*.messages.create(...)`, `*.messages.stream(...)` | Anthropic |
 | `litellm.completion(...)`, `litellm.acompletion(...)` | litellm |
 | `completion(...)`, `acompletion(...)` (bare names) | litellm via `from litellm import completion` |
-| `<llm\|chat\|model\|client\|agent\|chain\|runnable>.<invoke\|generate\|complete\|chat\|call\|predict>(...)` | LangChain, LlamaIndex, similar |
+| `<llm\|chat\|chat_model\|chatmodel\|model\|client\|agent\|chain\|runnable>.<invoke\|ainvoke\|generate\|agenerate\|complete\|acomplete\|chat\|achat\|predict\|apredict\|call\|acall>(...)` | LangChain, LlamaIndex, similar (sync and async forms) |
 | `safe_llm_call(...)` | LLMEffect runtime helper |
 
 ### Dangerous sinks
@@ -94,9 +94,9 @@ The analyzer recognizes native SDK calls and common framework wrappers:
 | Pattern | Kind |
 |---------|------|
 | `*.execute(...)`, `*.executemany(...)`, `*.executescript(...)`, `*.raw(...)` | SQL |
-| `subprocess.run`, `subprocess.Popen`, `subprocess.call`, `subprocess.check_output`, `os.system`, `os.popen` | shell |
+| `subprocess.run`, `subprocess.Popen`, `subprocess.call`, `subprocess.check_output`, `subprocess.check_call`, `os.system`, `os.popen` | shell |
 | `eval(...)`, `exec(...)`, `compile(...)` | code execution |
-| `requests.get/post/put/delete/...`, `urllib.*` | URL fetch |
+| `requests.get/post/put/delete/patch/request`, `urllib.urlopen` | URL fetch |
 
 ### Validators
 
